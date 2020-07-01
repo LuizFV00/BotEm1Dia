@@ -3,6 +3,9 @@ from telegram.ext import (Updater, CommandHandler, MessageHandler, Filters,
                          RegexHandler, ConversationHandler)
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove
 
+STATE1 = 1
+STATE2 = 2
+
 def welcome(update,context):
     message = 'Olá '+update.message.from_user.first_name +'!'
     print(message)
